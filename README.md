@@ -1,14 +1,43 @@
 # flyme_annotation
 
-A new Flutter package project.
+> Just for Flutter.
+
+Annotation for [flame_generator](https://github.com/maybewaityou/flyme_generator).
 
 ## Getting Started
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+### Properties
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+Properties: a property list.
+
+### Property
+
+Property: describe instance's property. And it has three properties:
+
+* name: property's name.
+* type: property's type.
+* initial: property's initialized value.
+
+## How to use
+
+just see the code:
+
+```dart
+@Properties([
+  Property(name: "name", type: "String", initial: ""),
+  Property(name: "age", type: "num", initial: "-1"),
+  Property(
+      name: "user",
+      type: "User",
+      initial: '''User(name: "", age: -1, email: "")'''),
+  Property(name: "foo", type: "String"),
+  Property(name: "boo", type: "String", initial: "something"),
+])
+class TestModel extends _ViewModelProxy {
+  @override
+  void init() {
+    print("==== Test init ====");
+  }
+}
+```
+
