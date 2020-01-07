@@ -9,7 +9,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  analyzer: ^0.39.2+1
 
 dev_dependencies:
   flutter_test:
