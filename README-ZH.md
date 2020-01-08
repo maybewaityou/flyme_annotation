@@ -56,6 +56,8 @@ class TestModel extends _ViewModelProxy {
 
 ### Functional Widget 注解
 
+> 使用纯函数来定义组件 (**React** 纯函数思想)
+
 ```dart
 port '{当前文件名}.g.dart';
 
@@ -92,4 +94,11 @@ Property: 属性类:
 
 widget: 标识函数为纯函数组件.
 
+
+
+## 关联项目
+
+[flyme_generator](https://github.com/maybewaityou/flyme_generator): flyme 生成器. 可根据 **Properties** 注解生成 **ViewModel**, 根据 **widget** 注解生成无状态组件.
+
+[generator-flyme](https://github.com/maybewaityou/generator-flyme): yeoman 命令行工具. 可自动生成 **项目**/**包**/**原生插件**/**业务模块**/**界面**/**用例模板**等.
 
