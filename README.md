@@ -1,3 +1,5 @@
+language: [English](README.md) | [简体中文](README-ZH.md)
+
 # flyme_annotation
 
 > Just for Flutter.

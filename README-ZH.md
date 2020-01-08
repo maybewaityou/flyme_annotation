@@ -1,0 +1,95 @@
+language: [English](README.md) | [简体中文](README-ZH.md)
+
+# flyme_annotation
+
+> flyme_generator 生成器的注解.
+
+## 安装
+
+在项目配置文件 **pubspec.yaml** 中添加依赖:
+
+```yaml
+dependencies:
+  # 生成器注解
+  flyme_annotation:
+    git:
+      url: https://github.com/maybewaityou/flyme_annotation.git
+
+# 生成器
+dev_dependencies:
+  flyme_generator:
+    git:
+      url: https://github.com/maybewaityou/flyme_generator.git
+```
+
+## 使用
+
+### ViewModel 注解
+
+```dart
+port '{当前文件名}.g.dart';
+
+@Properties([
+  Property(name: "name", type: String),
+  Property(name: "age", type: num),
+  Property(
+      name: "user",
+      type: User,
+      initial: '''User(name: "", age: -1, email: "")'''),
+  Property(name: "foo", type: String),
+  Property(name: "boo", type: String, initial: "something"),
+])
+class TestModel extends _ViewModelProxy {
+  @override
+  void init() {
+    print("==== Test init ====");
+  }
+}
+```
+
+未设置 **initial** 字段:
+
+* String: ''(空字符串).
+* num/int/double: 0.
+* bool: false.
+* 其它类型: null.
+
+### Functional Widget 注解
+
+```dart
+port '{当前文件名}.g.dart';
+
+@widget
+Widget foo(BuildContext context, {int value, String title}) {
+  // TODO: 编写组件内容
+  return Text("");
+}
+```
+
+### 运行
+
+运行编译命令, 生成相应文件
+
+> flutter packages pub run build_runner build
+
+
+
+## API
+
+### Properties
+
+Properties: 注解属性列表.
+
+### Property
+
+Property: 属性类:
+
+- name: property's name.
+- type: property's type.
+- initial: property's initialized value.
+
+### widget
+
+widget: 标识函数为纯函数组件.
+
+
