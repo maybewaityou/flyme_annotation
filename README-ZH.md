@@ -62,7 +62,7 @@ port '{当前文件名}.g.dart';
 @widget
 Widget foo(BuildContext context, {int value, String title}) {
   // TODO: 编写组件内容
-  return Text("");
+  return Text("value: $value - title: $title");
 }
 ```
 
