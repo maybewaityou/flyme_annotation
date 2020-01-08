@@ -1,3 +1,7 @@
+// **************************************************************************
+// Annotations for ViewModelGenerator
+// **************************************************************************
+
 class Properties {
   final List<Property> properties;
 
@@ -11,3 +15,13 @@ class Property {
 
   const Property({this.name, this.type, this.initial});
 }
+
+// **************************************************************************
+// Annotations for FunctionalWidgetGenerator
+// **************************************************************************
+
+class FunctionalWidget {
+  const FunctionalWidget();
+}
+
+const widget = const FunctionalWidget();
