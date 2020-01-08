@@ -102,3 +102,8 @@ widget: 标识函数为纯函数组件.
 
 [generator-flyme](https://github.com/maybewaityou/generator-flyme): yeoman 命令行工具. 可自动生成 **项目**/**包**/**原生插件**/**业务模块**/**界面**/**用例模板**等.
 
+
+
+## License
+
+MIT © [MeePwn](https://github.com/maybewaityou)
