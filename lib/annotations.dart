@@ -19,11 +19,13 @@ class Property {
 // **************************************************************************
 // Annotations for RouteGenerator
 // **************************************************************************
-class RouteConfig {}
+class FRouteConfig {
+  const FRouteConfig();
+}
 
-class Route {
-  final String path;
-  const Route({this.path});
+class FRoute {
+  final String url;
+  const FRoute({this.url});
 }
 
 // **************************************************************************
