@@ -24,8 +24,10 @@ class FRouteConfig {
 }
 
 class FRoute {
+  final String desc;
   final String url;
-  const FRoute({this.url});
+  final Map<String, dynamic> params;
+  const FRoute({this.desc, this.url, this.params});
 }
 
 // **************************************************************************
