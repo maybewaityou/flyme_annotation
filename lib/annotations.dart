@@ -12,8 +12,9 @@ class Property {
   final String name;
   final Type type;
   final String initial;
+  final Type generic;
 
-  const Property({this.name, this.type, this.initial});
+  const Property({this.name, this.type, this.generic, this.initial});
 }
 
 // **************************************************************************
