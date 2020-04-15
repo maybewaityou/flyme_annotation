@@ -10,15 +10,12 @@ class Properties {
   const Properties(this.properties);
 }
 
-typedef Type Generic();
-typedef List<Type> Generics();
-
 class Property {
   final String name;
   final Type type;
   final String initial;
-  final Generic generic;
-  final Generics generics;
+  final Type generic;
+  final List<Type> generics;
 
   const Property(
       {@required this.name,
