@@ -15,12 +15,15 @@ class Property {
   final Type generic;
   final List<Type> generics;
   final String desc;
+  final List<String> descs;
 
-  const Property(
-      {this.name,
-      this.type,
-      this.generic,
-      this.generics,
-      this.initial,
-      this.desc});
+  const Property({
+    this.name,
+    this.type,
+    this.generic,
+    this.generics,
+    this.initial,
+    this.desc,
+    this.descs,
+  });
 }
