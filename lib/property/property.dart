@@ -2,8 +2,6 @@
 // Annotations for ViewModelGenerator
 // **************************************************************************
 
-import 'package:flutter/foundation.dart';
-
 class Properties {
   final List<Property> properties;
 
