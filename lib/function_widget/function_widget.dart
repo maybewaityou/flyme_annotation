@@ -1,37 +1,4 @@
 // **************************************************************************
-// Annotations for ViewModelGenerator
-// **************************************************************************
-
-class Properties {
-  final List<Property> properties;
-
-  const Properties(this.properties);
-}
-
-class Property {
-  final String name;
-  final Type type;
-  final String initial;
-  final Type generic;
-
-  const Property({this.name, this.type, this.generic, this.initial});
-}
-
-// **************************************************************************
-// Annotations for RouteGenerator
-// **************************************************************************
-class FRouteConfig {
-  const FRouteConfig();
-}
-
-class FRoute {
-  final String desc;
-  final String url;
-  final Map<String, dynamic> params;
-  const FRoute({this.desc, this.url, this.params});
-}
-
-// **************************************************************************
 // Annotations for FunctionalWidgetGenerator
 // **************************************************************************
 
