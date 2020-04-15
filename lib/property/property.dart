@@ -14,7 +14,7 @@ class Property {
   final String initial;
   final Type generic;
   final List<Type> generics;
-  final String description;
+  final String desc;
 
   const Property(
       {this.name,
@@ -22,5 +22,5 @@ class Property {
       this.generic,
       this.generics,
       this.initial,
-      this.description});
+      this.desc});
 }
