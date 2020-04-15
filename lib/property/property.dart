@@ -16,9 +16,5 @@ class Property {
   final List<Type> generics;
 
   const Property(
-      {@required this.name,
-      @required this.type,
-      this.generic,
-      this.generics,
-      this.initial});
+      {this.name, this.type, this.generic, this.generics, this.initial});
 }
