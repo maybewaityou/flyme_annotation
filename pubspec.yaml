@@ -1,6 +1,7 @@
 name: flyme_annotation
 description: Annotation for flyme_generator.
 version: 0.0.3
+author: MeePwn
 homepage: https://github.com/maybewaityou
 documentation: https://github.com/maybewaityou/flyme_annotation/blob/master/README.md
 repository: https://github.com/maybewaityou/flyme_annotation
