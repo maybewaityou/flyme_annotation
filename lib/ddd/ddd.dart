@@ -1,5 +1,7 @@
 class DomainInstance {
-  const DomainInstance();
+  final Type as;
+
+  const DomainInstance({this.as});
 }
 
 const domainInstance = DomainInstance();
