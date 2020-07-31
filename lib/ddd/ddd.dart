@@ -11,3 +11,9 @@ class DomainFactory {
 }
 
 const domainFactory = DomainFactory();
+
+class _DataModelTranslator {
+  const _DataModelTranslator();
+}
+
+const addTranslator = _DataModelTranslator();
